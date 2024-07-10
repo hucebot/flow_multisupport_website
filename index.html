@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L45S5S5Y9"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4L45S5S5Y9');
+  </script>
+  <meta charset="utf-8">
+  <meta name="description" content="Flow Multi-Support: Flow Matching Imitation Learning for Multi-Support Manipulation">
+  <meta name="keywords" content="Whole-Body Control, Multi-Contact, Multi-Support, Teleoperation, Imitation Learning, Humanoid Robot, Talos Robot, Flow Matching, Diffusion, Generative AI, Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flow Multi-Support</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <link rel="icon" href="./resources/favicon.ico">
+</head>
+<body>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><span class="is-size-3">Flow Multi-Support:</span><br/>Flow Matching Imitation Learning<br/>for Multi-Support Manipulation</h1>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="">Quentin Rouxel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="">Andrea Ferrari</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://members.loria.fr/SIvaldi">Serena Ivaldi</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://members.loria.fr/JBMouret">Jean-Baptiste Mouret</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block" style="display:block">
+              Inria, CNRS, Université de Lorraine
+            </span>
+            <span class="author-block">
+              <img src="./resources/logos/logo_inria.png" width="15%" style="margin:1%"></img>
+              <img src="./resources/logos/logo_cnrs.png" width="5%" style="margin:1%"></img>
+              <img src="./resources/logos/logo_ul.png" width="15%" style="margin:1%"></img>
+              <img src="./resources/logos/logo_loria.png" width="5%" style="margin:1%"></img>
+              <img src="./resources/logos/logo_eurobin.png" width="15%" style="margin:1%"></img>
+              <img src="./resources/logos/logo_eu.png" width="15%" style="margin:1%"></img>
+              <img src="./resources/logos/logo_pepr.png" width="10%" style="margin:1%"></img>
+            </span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="resources/flow_multisupport_2024.pdf"
+                   class="external-link button is-normal is-rounded is-dark is-size-5">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2407.12381"
+                   class="external-link button is-normal is-rounded is-dark is-size-5">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>ArXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://hal.science/hal-04650144"
+                   class="external-link button is-normal is-rounded is-dark is-size-5">
+                  <span class="icon">
+                      <i class="ai ai-hal"></i>
+                  </span>
+                  <span>HAL</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://youtu.be/KElCHfDH8ZE"
+                   class="external-link button is-normal is-rounded is-dark is-size-5">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom: 0">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds no-bottom-padding">
+        <iframe height="500" src="https://www.youtube.com/embed/KElCHfDH8ZE" title="YouTube video player" frameborder="0" style="border: 1px solid #bbb; border-radius: 10px; width: 100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="row is-full-width">
+          <img src="resources/media/flow_2d.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto" />
+        </div>
+        <div class="content has-text-justified is-size-5">
+            <br/>
+            <p>Humanoid robots could benefit from using their upper bodies for support contacts, enhancing their workspace, stability, and ability to perform contact-rich and pushing tasks. In this paper, we propose a unified approach that combines an optimization-based multi-contact whole-body controller with Flow Matching, a recently introduced method capable of generating multi-modal trajectory distributions for imitation learning. In simulation, we show that Flow Matching is more appropriate for robotics than Diffusion and traditional behavior cloning. On a real full-size humanoid robot (Talos), we demonstrate that our approach can learn a whole-body non-prehensile box-pushing task and that the robot can close dishwasher drawers by adding contacts with its free hand when needed for balance. We also introduce a shared autonomy mode for assisted teleoperation, providing automatic contact placement for tasks not covered in the demonstrations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="width: 100%; text-align: center; padding-bottom: 10px;">Multi-Support Experiments on Talos Humanoid Robot</h2>
+            <div class="row" style="margin-bottom: 10px">
+              <div class="col" style="padding-left: 10px; padding-right: 10px">
+                <h3 class="title is-4 subtitle"><span class="icon is-medium"><i class="fas fa-robot"></i></span> Non-Prehensile Box Pushing (Autonomous)</h3>
+                <video autoplay muted loop playsinline controls src="./resources/video/talos_push_autonomous2.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+              <div class="col" style="padding-left: 10px; padding-right: 10px">
+                <h3 class="title is-4 subtitle"><span class="icon is-medium"><i class="fas fa-robot"></i></span> Closing of Dishwasher Drawers (Autonomous)</h3>
+                <video autoplay muted loop playsinline controls src="./resources/video/talos_dishwasher_autonomous2.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+            </div>
+            <div class="row">
+              <h3 class="title is-4 subtitle"><span class="icon is-medium"><i class="fas fa-circle-xmark"></i></span> When trained on the red T-box, the autonomous policy performs poorly out-of-distribution with the blue U-box</h3>
+              <br/>
+            </div>
+            <div class="row">
+              <div class="col" style="padding-left: 10px; padding-right: 10px">
+                <video autoplay muted loop playsinline controls src="./resources/video/talos_push_failure2.mp4" width="100%" style="border-radius:10px; "></video>
+                <br/>
+              </div>
+              <div class="col" style="padding-left: 10px; padding-right: 10px">
+                <img src="resources/media/boxes.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto" />
+                <br/>
+              </div>
+            </div>
+            <div class="row">
+              <h3 class="title is-4 subtitle"><span class="icon is-medium"><i class="fas fa-arrow-right"></i></span> This is mitigated with Shared Autonomy / Assisted Teleoperation approach</h3>
+              <h3 class="title is-4 subtitle"><span class="icon is-medium"><i class="fas fa-arrow-right"></i></span> The human operator commands the left hand, and the policy commands the right hand</h3>
+              <br/>
+            </div>
+            <div class="row">
+              <br/>
+              <div class="col" style="padding-left: 10px; padding-right: 10px">
+                <h3 class="title is-4 subtitle"><span class="icon is-medium"><i class="fas fa-user"></i></span><span class="icon is-medium"><i class="fas fa-robot"></i></span> Assisted Teleoperation Pushing the Blue U-Box</h3>
+                <video autoplay muted loop playsinline controls src="./resources/video/talos_push_assistance2.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+              <div class="col" style="padding-left: 10px; padding-right: 10px">
+                <h3 class="title is-4 subtitle"><span class="icon is-medium"><i class="fas fa-user"></i></span><span class="icon is-medium"><i class="fas fa-robot"></i></span> Assisted Teleoperation Closing Dishwasher Drawers</h3>
+                <video autoplay muted loop playsinline controls src="./resources/video/talos_dishwasher_assistance2.mp4" width="100%" style="border-radius:10px; "></video>
+              </div>
+            </div>
+        </tr>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-2" style="width: 100%; text-align: center; padding-bottom: 10px;">Methodology</h2>
+      </div>
+      <!--
+      <div class="row is-full-width">
+        <img src="resources/media/flow_2d.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto" />
+      </div>
+      -->
+      <div class="row is-full-width">
+        <div class="columns is-centered is-full-width" style="width: 100%">
+          <div class="column content is-size-5 is-three-fifths">
+            <h3 class="title is-4">Multi-Support Manipulation Tasks:</h3>
+            <ul>
+              <li>
+                Use additional contact to extend manipulation capabilities
+              </li>
+              <li>
+                Reach further, be more stable, apply higher pushing forces
+              </li>
+              <li>
+                Leverage whole-body motion and multi-contact strategies
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row is-full-width">
+        <img src="resources/media/architecture.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto" />
+      </div>
+      <div class="row is-full-width">
+        <div class="columns is-centered is-full-width" style="width: 100%">
+          <div class="column content is-size-5 is-three-fifths">
+            <h3 class="title is-4">Main Ideas</h3>
+            <ul>
+              <li>
+                Imitation learning from human demonstrations (behavior cloning)
+              </li>
+              <li>
+                Use human "common sense" to learn contact sequence and location
+              </li>
+              <li>
+                Solve out-of-distribution tasks not covered by demonstrations using shared autonomy assisted teleoperation
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row is-full-width">
+        <img src="resources/media/flow_inference.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto" />
+      </div>
+      <div class="row is-full-width">
+        <div class="columns is-centered is-full-width" style="width: 100%">
+          <div class="column content is-size-5 is-three-fifths">
+            <h3 class="title is-4">Imitation Learning with Flow Matching</h3>
+            <ul>
+              <li>
+                The policy outputs a full command trajectory instead of a single action
+              </li>
+              <li>
+                Use Flow Matching, a generative method able to capture high-dimensional and multi-modal distributions
+              </li>
+              <li>
+                Simpler framework, slightly more performant than Diffusion for robotics grounded in optimal transport theory
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row is-full-width">
+        <a href="https://hucebot.github.io/seiko_controller_website/">
+          <img src="resources/media/seiko_retargeting_controller.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto" />
+          <br/>
+        </a>
+      </div>
+      <div class="row is-full-width">
+        <div class="columns is-centered is-full-width" style="width: 100%">
+          <div class="column content is-size-5 is-three-fifths">
+            <h3 class="title is-4">Multi-Contact Low-Level Controller</h3>
+            <ul>
+              <li>
+                Use our previous work <strong>SEIKO Retargeting and Controller</strong><br/>
+                <a href="https://hucebot.github.io/seiko_controller_website/">https://hucebot.github.io/seiko_controller_website/</a>
+              </li>
+              <li>
+                Retargeting from Cartesian to whole-body commands with feasibility constraints
+              </li>
+              <li>
+                Implement smooth contact switch
+              </li>
+              <li>
+                Regulate contact forces on our position-controlled robot
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-2" style="width: 100%; text-align: center; padding-bottom: 10px;">Comparison Between Flow Matching and Diffusion Methods</h2>
+      </div>
+      <div class="row is-full-width">
+        <h3 class="title is-4 subtitle">Simulated T-Box Pushing Task</h3>
+      </div>
+      <div class="row is-full-width">
+        <div class="columns is-centered">
+          <div class="column is-two-third">
+            <video autoplay muted loop playsinline controls src="./resources/video/sim_push.mp4" width="100%" style="border-radius:10px; "></video>
+          </div>
+          <div class="column">
+            <img src="resources/media/plot_pushing_box.png" class="interpolation-image" alt="" style="display: block; margin-right: auto;"/>
+          </div>
+        </div>
+      </div>
+      <div class="row is-full-width">
+        <h3 class="title is-4 subtitle">Simulated Bimodal Contact Reaching Task</h3>
+      </div>
+      <div class="row is-full-width">
+        <div class="columns is-centered">
+          <div class="column is-two-third">
+            <video autoplay muted loop playsinline controls src="./resources/video/sim_reach.mp4" width="100%" style="border-radius:10px; "></video>
+          </div>
+          <div class="column">
+            <img src="resources/media/table_reaching.png" class="interpolation-image" alt="" style="display: block; margin-right: auto;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-2" style="width: 100%; text-align: center; padding-bottom: 10px;">BibTeX</h2>
+      </div>
+      <div class="row is-full-width">
+          <a href="resources/flow_multisupport_2024.pdf"><img src="resources/pages.png" class="interpolation-image" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 70%" /></a>
+      </div>
+      <div class="row is-full-width">
+        <pre><code>@article{rouxel2024flowmultisupport,
+  title={Flow Matching Imitation Learning for Multi-Support Manipulation},
+  author={Rouxel, Quentin and Ferrari, Andrea and Ivaldi, Serena and Mouret, Jean-Baptiste},
+  year={2024},
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+
